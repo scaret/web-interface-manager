@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./InterfaceManager.js"></script>
+    </head>
+    <body>
+        <script>
+            InterfaceManager.xmlHttpRequestManager.on('xhrRegister', function(xhr){
+              console.log('xhrRegister', xhr);
+            });
+
+            new XMLHttpRequest();
+        </script>
+    </body>
+</html>

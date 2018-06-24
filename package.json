@@ -1,0 +1,35 @@
+{
+  "name": "web-interface-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-XMLHttpRequest",
+    "build": "webpack-cli --mode=production",
+    "test-XMLHttpRequest": "webpack-cli --mode=development --config=webpack.test.js && mocha dist/test/unit_test/XMLHttpRequest.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scaret/web-interface-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scaret/web-interface-manager/issues"
+  },
+  "homepage": "https://github.com/scaret/web-interface-manager#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eventemitter3": "^3.1.0",
+    "fake-xml-http-request": "^2.0.0",
+    "mocha": "^5.2.0",
+    "path-override-webpack-plugin": "^0.1.2",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
